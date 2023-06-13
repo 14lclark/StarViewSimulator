@@ -26,12 +26,12 @@ public:
 
     //}
     //
-    void setLookDirection(std::vector<double> direction) {
-        lookDirection = direction;
-    }
-    
+    void setLookDirection(std::vector<double> direction);
+    void setLocation(std::vector<double> newLocation);
 private:
+    bool ICanSeeThis(double fov, std::vector<double>, std::vector<double> location);
     double geocentricLatitude = 0; // geocentric latitude of the observer on the planet
-    std::vector<double> lookDirection; // = { sin(rotationalAxisAngle), 0, -cos(rotationalAxisAngle) };
-
+    std::vector<double> lookDirection;
+    std::vector<double> myLocation;
+    
 };
