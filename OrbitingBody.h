@@ -15,6 +15,4 @@ protected:
     double currentAngleLoc; // current location as an angle from centerCoords+(1,0,0)
     double orbitDistance;   // distance to Sun in AUs
     double orbitalPeriod;   // orbital period in Earth years
-private:
-
 };

@@ -27,6 +27,12 @@
     <ClCompile Include="OrbitingBody.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="RotatingOrbitingBody.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Body.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Observer.h">
@@ -42,6 +48,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="OrbitingBody.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RotatingOrbitingBody.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

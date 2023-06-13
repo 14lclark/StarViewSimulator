@@ -127,8 +127,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Body.cpp" />
     <ClCompile Include="OrbitingBody.cpp" />
     <ClCompile Include="RotatingBody.cpp" />
+    <ClCompile Include="RotatingOrbitingBody.cpp" />
     <ClCompile Include="vectortools.cpp" />
     <ClCompile Include="StarStreakSimulator.cpp" />
   </ItemGroup>
@@ -137,6 +139,7 @@
     <ClInclude Include="Body.h" />
     <ClInclude Include="OrbitingBody.h" />
     <ClInclude Include="RotatingBody.h" />
+    <ClInclude Include="RotatingOrbitingBody.h" />
     <ClInclude Include="vectortools.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
