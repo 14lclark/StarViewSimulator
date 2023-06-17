@@ -1,11 +1,13 @@
 // StarStreakSimulator.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
 
 #include <iostream>
 #include <vector>
-#include "observer.h"
-#include "body.h"
-#include "vectortools.h"
+#include "lib/Observer.h"
+#include "lib/Body.h"
+#include "lib/RotatingBody.h"
+#include "lib/OrbitingBody.h"
+#include "lib/RotatingOrbitingBody.h"
+#include "lib/vectortools.h"
 
 
 int main()

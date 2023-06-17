@@ -24,6 +24,7 @@
     <ProjectGuid>{d4b3f870-5659-473f-95fa-a1701dfc3320}</ProjectGuid>
     <RootNamespace>StarStreakSimulator</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>StarViewSimulator</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -127,20 +128,21 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Body.cpp" />
-    <ClCompile Include="OrbitingBody.cpp" />
-    <ClCompile Include="RotatingBody.cpp" />
-    <ClCompile Include="RotatingOrbitingBody.cpp" />
-    <ClCompile Include="vectortools.cpp" />
-    <ClCompile Include="StarStreakSimulator.cpp" />
+    <ClCompile Include="lib\Body.cpp" />
+    <ClCompile Include="lib\Observer.cpp" />
+    <ClCompile Include="lib\OrbitingBody.cpp" />
+    <ClCompile Include="lib\RotatingBody.cpp" />
+    <ClCompile Include="lib\RotatingOrbitingBody.cpp" />
+    <ClCompile Include="lib\vectortools.cpp" />
+    <ClCompile Include="StarViewSimulator.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Observer.h" />
-    <ClInclude Include="Body.h" />
-    <ClInclude Include="OrbitingBody.h" />
-    <ClInclude Include="RotatingBody.h" />
-    <ClInclude Include="RotatingOrbitingBody.h" />
-    <ClInclude Include="vectortools.h" />
+    <ClInclude Include="lib\Observer.h" />
+    <ClInclude Include="lib\Body.h" />
+    <ClInclude Include="lib\OrbitingBody.h" />
+    <ClInclude Include="lib\RotatingBody.h" />
+    <ClInclude Include="lib\RotatingOrbitingBody.h" />
+    <ClInclude Include="lib\vectortools.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

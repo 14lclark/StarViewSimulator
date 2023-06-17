@@ -1,5 +1,4 @@
 #include "RotatingBody.h"
-#include "Body.h"
 
 RotatingBody::RotatingBody(std::vector<double> currentXYZLocation,
                           double _rotationalPeriod,

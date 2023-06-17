@@ -15,16 +15,25 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="StarStreakSimulator.cpp">
+    <ClCompile Include="StarViewSimulator.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="vectortools.cpp">
+    <ClCompile Include="lib\vectortools.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="RotatingBody.cpp">
+    <ClCompile Include="lib\RotatingBody.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="OrbitingBody.cpp">
+    <ClCompile Include="lib\OrbitingBody.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\RotatingOrbitingBody.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\Body.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\Observer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="RotatingOrbitingBody.cpp">
@@ -35,19 +44,22 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Observer.h">
+    <ClInclude Include="lib\Observer.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="vectortools.h">
+    <ClInclude Include="lib\vectortools.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Body.h">
+    <ClInclude Include="lib\Body.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="RotatingBody.h">
+    <ClInclude Include="lib\RotatingBody.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="OrbitingBody.h">
+    <ClInclude Include="lib\OrbitingBody.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\RotatingOrbitingBody.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="RotatingOrbitingBody.h">
