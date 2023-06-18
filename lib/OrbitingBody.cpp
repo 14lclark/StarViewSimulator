@@ -10,6 +10,7 @@ OrbitingBody::OrbitingBody(std::vector<double> currentXYZLocation,
     orbitalPeriod(_orbitalPeriod) {}
 
 void OrbitingBody::step(double hours) {
-    double locationAngleChange = (2 * M_PI / (orbitalPeriod * 365.25)) * (hours / 24);
+    double locationAngleChange = 
+        (2 * M_PI / (orbitalPeriod * DAYS_PER_YEAR)) * (hours / HOURS_PER_DAY);
     currentAngleLoc += locationAngleChange;
 }

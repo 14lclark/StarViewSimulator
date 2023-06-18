@@ -5,7 +5,8 @@ class RotatingOrbitingBody : public OrbitingBody, public RotatingBody {
     RotatingOrbitingBody(std::vector<double> currentXYZLocation,
         std::vector<double> centerCoords, double orbitDistance,
         double currentAngleInOrbit, double orbitalPeriod,
-        double rotationalPeriod, double rotationalAxisAngle); 
+        double rotationalPeriod, double rotationalAxisAngle,
+        double geocentricLatitude); 
 
     void step(double hours);
 };

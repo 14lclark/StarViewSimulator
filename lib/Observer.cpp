@@ -4,6 +4,10 @@
 
 Observer::Observer(std::vector<double> currentXYZLocation) : myLocation(currentXYZLocation) {}
 
+std::vector<double> Observer::getLookDirection() {
+    return lookDirection;
+}
+
 void Observer::setLookDirection(std::vector<double> direction) {
     lookDirection = direction;
 };

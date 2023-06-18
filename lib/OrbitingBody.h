@@ -1,5 +1,6 @@
 #pragma once
 #include "Body.h"
+#define DAYS_PER_YEAR 365.256363004 // sidereal year
 class OrbitingBody : virtual public Body {
 public:
     OrbitingBody(std::vector<double> currentXYZLocation,

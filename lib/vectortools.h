@@ -9,4 +9,6 @@ std::vector<double> subtract(std::vector<double> x, std::vector<double> y);
 std::vector<double> cross(std::vector<double> x, std::vector<double> y);
 std::vector<double> rotateAroundAxis(std::vector<double> vecToRotate, std::vector<double> axis, double angle);
 std::vector<double> projVecToVec(std::vector<double> x, std::vector<double> ontoY);
-std::vector<double> projVecToPlaneThroughOrigin(std::vector<double> x, std::vector<double> planeNormal);
+std::vector<double> projVecToRemoteOriginPlane(std::vector<double> vec, 
+												std::vector<double> origin,
+												std::vector<double> planeNormal);

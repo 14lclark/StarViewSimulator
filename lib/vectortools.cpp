@@ -52,10 +52,14 @@ std::vector<double> projVecToVec(std::vector<double> x, std::vector<double> onto
 	return scalarMultiple(dot(x, unitY), unitY);
 };
 
-std::vector<double> projVecToPlaneThroughOrigin(std::vector<double> x, std::vector<double> planeNormal) {
-	std::vector<double> normalPartX = projVecToVec(x, planeNormal);
-	return subtract(x, normalPartX);
+std::vector<double> projVecToRemoteOriginPlane(std::vector<double> vec,
+											   std::vector<double> origin,
+											   std::vector<double> planeNormal) {
+	std::vector<double> apparentVec = subtract(vec, origin);
+	std::vector<double> normalPart = projVecToVec(subtract(vec, origin), planeNormal);
+	return subtract(apparentVec, normalPart);
 };
+
 
 std::vector<double> rotateAroundAxis(std::vector<double> vecToRotate, std::vector<double> axis, double angle) {
 	std::vector<double> term1 = scalarMultiple( cos(angle), vecToRotate );
